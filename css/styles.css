@@ -1,0 +1,180 @@
+.header-image {
+    width: 100%;
+    max-height: 1000px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.centered-header {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    color: #347aeb;
+    padding: 20px;
+}
+
+.profile-image {
+    margin-right: 10px;
+    margin-bottom: 24px;
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.header-info {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.member-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-info p, h4 {
+    margin: 0;
+}
+
+.icon {
+    max-width: 5%;
+    max-height: 5%;
+    padding: 8px;
+}
+
+.service-info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.service-info h4 {
+    font-size: x-large;
+    margin-top: 0;
+}
+
+.service-info p {
+    margin-bottom: 20px;
+    margin-right: 48px;
+}
+
+.about-us-text {
+    text-align: center;
+}
+
+.contact-image {
+    display:inline-flex;
+    flex-direction:row;
+    width: 90px;
+    height: 20px;
+}
+
+.contact-image img {
+    margin-right: 12px; 
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+article {
+    margin-top: 24px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+header {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: white;
+    background-color: #347aeb;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    margin: 0 50px;
+}
+
+h2,h3 {
+    margin: 0;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+aside {
+    margin-right: 60px;
+    margin-bottom: 12px;
+    text-align: right;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: #347aeb;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    header, .header-image, .header-info, article, section {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .member-info, .service-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-us-text, .centered-header {
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .icon {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .member-info {
+        flex: 1 1 200px;
+        margin: 10px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .profile-image {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+}
